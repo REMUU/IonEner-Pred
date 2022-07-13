@@ -1,0 +1,2 @@
+Codes are adapted from the official github site of DGL-LifeSci. Available from https://github.com/awslabs/dgl-lifesci
+Due to the difficulty of implementing DGL-LifeSci on Windows 10 at a early time, the computational work of all gnn models were done on Ubuntu 2004 LTS.

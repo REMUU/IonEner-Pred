@@ -1,0 +1,1 @@
+SMILES structure of molecules, properties and generated descriptors are stored inside these folders.
