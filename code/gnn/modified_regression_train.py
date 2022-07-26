@@ -3,6 +3,8 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 
+# Codes are adapted from the official github site of DGL-LifeSci. Available from https://github.com/awslabs/dgl-lifesci
+
 import json
 import pandas as pd
 import numpy as np
