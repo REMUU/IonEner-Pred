@@ -3,15 +3,15 @@ Author: Yufeng Liu, Zhenyu Li*
 Any potential usage of codes and data should directly refer to this paper or their original publication rather than this repository.
 
 File Structure:
----- code
-	---- conventional_machine_learning
-	---- gnn
-	---- nni
-	---- pca
-	---- scrape_webpage
-	---- structure_conversion
----- dataset 
-	---- freesol_by_descriptor_set
-	---- full_set
-	---- lipophilicity_by_descriptor_set
-	---- nist_descriptor_by_descriptor_set
+- code
+	- conventional_machine_learning
+	- gnn
+	- nni
+	- pca
+	- scrape_webpage
+	- structure_conversion
+- dataset 
+	- freesol_by_descriptor_set
+	- full_set
+	- lipophilicity_by_descriptor_set
+	- nist_descriptor_by_descriptor_set
