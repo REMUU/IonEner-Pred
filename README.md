@@ -5,12 +5,15 @@ Author: Yufeng Liu, Zhenyu Li*
 Any potential usage of codes and data should directly refer to this paper or their original publication rather than this repository.
 
 File Structure:
+- catagorized_images
+	- catagorized_images.zip
 - code
 	- conventional_machine_learning
 	- feature_selection
 	- gnn
 	- nni
 	- pca
+	- plot
 	- scrape_webpage
 	- structure_conversion
 - dataset 
