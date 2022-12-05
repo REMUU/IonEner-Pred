@@ -19,7 +19,6 @@ Depending on the dataset, manual manipulation via Excel or Python script can be 
 | NaN     | Remove the descriptor column|
 | Empty   | Remove the descriptor column|
 | Boolean | True to 1 and False to 0    |
-&nbsp;
 
 ## Descriptors Generation
 ---
@@ -32,7 +31,6 @@ Use the IE dataset as an example:
 | Benzaldehyde, 4-(dimethylamino)- | InChI=1S/C9H11NO/c1-10(2)9-5-3-8(7-11)4-6-9/h3-7H,1-2H3 | C100107 | CN(C)c1ccc(C=O)cc1 | 7.3 | 0 | 7.956514078 | 7.451864456 | ... | ... |
 | 1,4-Pentadien-3-yl radical | InChI=1S/C5H7/c1-3-5-4-2/h3-5H,1-2H2 | C14362084 | C=C[CH]C=C | 7.25 | 1 | 2.828427125 | 3.14626437 | ... | ... | 
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
-&nbsp;
 
 ## Implementing the SVR Model via Scikit-Learn
 ---
@@ -42,7 +40,6 @@ Use the IE dataset as an example:
 | gamma     | scale |
 | C         | 20    |
 | epsilon   | 0.01  |
-&nbsp;
 
 ### **How to 10-Fold CV**
 ```python
@@ -204,7 +201,6 @@ test_cv_df
 | patience        | 30     |
 | num_timesteps   | 2      |
 | learning rate   | 0.0003 |
-&nbsp;
 
 ### **How to 10-Fold CV**
 
