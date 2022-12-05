@@ -1,7 +1,6 @@
 # How to Use Models to Reproduce or Implement on Other Datasets
 
 ## Data Collection and Curation
----
 
 ### **Obtain Structures and Labels**
 Structures and labels of chemicals used in this study are available in CSV format under the [code/datasets](https://github.com/REMUU/IonEner-Pred/tree/main/datasets) folder with calculated descriptors.
@@ -21,7 +20,6 @@ Depending on the dataset, manual manipulation via Excel or Python script can be 
 | Boolean | True to 1 and False to 0    |
 
 ## Descriptors Generation
----
 To obtain descriptors, the [Mordred](https://github.com/mordred-descriptor) and [PaDEL](http://www.yapcwsoft.com/dd/padeldescriptor/) software should be used according to the setting described in ESI 4.1 section.
 
 ### **Example Format of the Data**
@@ -33,7 +31,7 @@ Use the IE dataset as an example:
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ## Implementing the SVR Model via Scikit-Learn
----
+
 ### **Details of Model Parameters**
 | Parameter | Value |
 | ---       | ---   |
@@ -191,7 +189,7 @@ test_cv_df
 &nbsp;
 
 ## Implementing the AttentiveFP via DGL-LifeSci
----
+
 ### **Details of Model Parameters**
 | Parameter       | Value  |
 | ---             | ---    |
@@ -274,7 +272,6 @@ metrics_df.to_excel(out_excel_path, index=False)
 &nbsp;
 
 ## Notice
----
 
 ## **Application Domain**
 This study is not intended to bring a model to solve all problems. However, it should generate satisfying resutls under properly prepared dataset. 

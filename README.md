@@ -1,5 +1,5 @@
 ## About the Paper
----
+
 Title: ***Predict Ionization Energy of Molecules Using Conventional and Graph Based Machine Learning Models***
 
 Author: **Yufeng Liu**, **Zhenyu Li***
@@ -8,7 +8,6 @@ Author: **Yufeng Liu**, **Zhenyu Li***
 
 <u>Any potential usage of codes and data should directly refer to this paper or their original publications.</u>
 
----
 ## Repository Structure
 - catagorized_images
 	- catagorized_images.zip
@@ -28,7 +27,6 @@ Author: **Yufeng Liu**, **Zhenyu Li***
 	- lipophilicity_by_descriptor_set
 	- nist_descriptor_by_descriptor_set
 
----
 ## Dependencies
 | Package      | Version     |
 | ---          | ---         |
@@ -41,6 +39,6 @@ Author: **Yufeng Liu**, **Zhenyu Li***
 | RDKit        | 2018.09.3.0 |
 | Mordred      | 1.2.0       |
 
----
+
 ## Citation
 **Awaiting Acceptance of the Paper**
