@@ -1,3 +1,4 @@
+# import required libraries
 from contextlib import closing
 from requests import get
 from bs4 import BeautifulSoup
@@ -63,11 +64,12 @@ def getval(main):
 # define the function to excecute the scrapper with previously defined tools
 def nistspider(ierange):
     df = pd.DataFrame(columns=['CAS Name', 'CAS Link', 'IE / eV'])
+    # byhand means 
     byhand_dict = {'Bad IE': []}
     start = time.time()
     for ie in ierange:
         main = getwebpage(ie)
-        # use sleep to avoid ip ban
+        # use sleep to avoid ip being banned for scraping
         time.sleep(np.random.randint(0, 1))
         if 'No Matching' in str(main.find_all('h1')):
             print('There is no compounds having IE of %f'%ie)
@@ -85,6 +87,7 @@ def nistspider(ierange):
     return df, df_byhand
 
 
+# write the CAS name, CAS like and ionization energy values for molecuels into the table 
 table, table_byhand = nistspider(ierange())
 table.to_csv(r'output_csv_path', index=False)
 table_byhand.to_csv(r'output_bad_struc_csv_path', index=False)

@@ -1,3 +1,4 @@
+# import required libraries
 from contextlib import closing
 from requests import get
 from bs4 import BeautifulSoup
@@ -61,7 +62,6 @@ def get_val(CAS):
         compound_name = main.find_all('h1', id='Top')[0].text
         _inchi = main.find_all('span')[0].text
         stdinchikey = main.find_all('span')[1].text
-
         if 'InChI' not in _inchi:
             _inchi = 'No-InChi'
             print(compound_name, ' have no InChi whose cas is ', CAS)
@@ -107,5 +107,6 @@ def nist_spider(path):
     print(time.time() - start)
 
 
+# run the Python scraper
 nist_spider(r'input_csv_path')
 

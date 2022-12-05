@@ -1,3 +1,4 @@
+# import required libraries
 import pandas as pd
 from cirpy import resolve
 from rdkit import Chem
@@ -21,23 +22,23 @@ for i in range(len(df)):
         except:
             smiles1 = None
             smiles2 = None
-            smiles = 'None'
+            smiles = None
         smiles = None
         if smiles1 is not None:
             smiles = smiles1
         elif smiles2 is not None and smiles1 is None:
             smiles = smiles2
-
         if smiles is None:
-            smiles = 'None'
+            smiles = None
             bad_mol = pd.concat([bad_mol, pd.DataFrame({'Bad Molecule Name': [name]})], axis=0, sort=False)
     # try to use the name of molecule to get SMILES when the InChI is failed
     else:
         try:
             smiles = resolve(name, 'smiles')
         except:
-            smiles = 'None'
+            smiles = None
             bad_mol = pd.concat([bad_mol, pd.DataFrame({'Bad Molecule Name': [name]})], axis=0, sort=False)
+    # update the dataset Dataframe by concat Dataframe of the molecule and the dataset
     temp_df = pd.DataFrame({'CAS Name': [name],
                             'InChI': [inchi],
                             'CAS Link': [link],
@@ -45,6 +46,6 @@ for i in range(len(df)):
                             'IE / eV': [ie]})
     dataset = pd.concat([dataset, temp_df], axis=0, sort=False)
 
-# make output
+# write the dataset and wrong molecules into respective CSV files
 dataset.to_excel(r'output_excel_path', index=False)
 bad_mol.to_csv(r'output_bad_mol_csv_path', index=False)

@@ -1,8 +1,10 @@
+Train and optimization use the stock regression_train.py which is consistent to the version on the Github of DGL-LifeSci repository.
 train:
 python regression_train.py -c input.csv -mo AttentiveFP -sc smiles -t IE -s random -sr 0.7,0.15,0.15 -me rmse -a canonical -b canonical -n 300 -nw 8 -pe 10 -p output_path
 
-10-fold-cross_validation (modified code is used):
-python regression_train.py -c input.csv -mo AttentiveFP -sc smiles -t IE -s consecutive_smiles -me rmse -a canonical -b canonical -n 300 -nw 8 -pe 10 -p output_path
-
 optimization:
 python regression_train.py -c input.csv -mo AttentiveFP -sc smiles -t IE -s random -sr 0.7,0.1,0.2 -ne 200 -me rmse -a canonical -b canonical -n 1000 -nw 8 -pe 10 -p output_path
+
+The modified_regression_train.py is use to run the 10-Fold-CV as the need of this research.
+10-fold-cross_validation:
+python modified_regression_train.py -c input.csv -mo AttentiveFP -sc smiles -t IE -s consecutive_smiles -me rmse -a canonical -b canonical -n 300 -nw 8 -pe 10 -p output_path
