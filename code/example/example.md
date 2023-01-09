@@ -273,7 +273,7 @@ metrics_df.to_excel(out_excel_path, index=False)
 
 ## Notice
 
-## **Application Domain**
+### **Application Domain**
 This study is not intended to bring a model to solve all problems. However, it should generate satisfying resutls under properly prepared dataset. 
 
 ### **Following elements are found during our training of models:**
