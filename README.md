@@ -4,7 +4,7 @@ Title: ***Predict Ionization Energy of Molecules Using Conventional and Graph Ba
 
 Author: **Yufeng Liu**, **Zhenyu Li***
 
->**Abstract**: Abstract will be displayed here after the acceptance of the paper.
+>**Abstract**: Ionization energy (IE) is an important property of molecules. It is highly desirable to predict IE efficiently based on, for example, machine learning (ML)-powered quantitative structure-property relationships (QSPR). In this study, we systematically compare the performance of different machine learning models in predicting the IE of molecules with distinct functional groups obtained from the NIST webbook. Mordred and PaDEL are used to generate informative and computationally inexpensive descriptors for conventional ML models. Using a descriptor to indicate if the molecule is a radical can significantly improve the performance of these ML models. Support vector regression (SVR) is the best conventional ML model for IE prediction. In graph-based models, the AttentiveFP gives an even better performance compared to SVR. The difference between these two types of models mainly comes from their predictions for radical molecules, where the local environment around an unpaired electron is better described by graph-based models. These results provide not only high-performance models for IE prediction but also useful information in choosing models to obtain reliable QSPR.
 
 <u>Any potential usage of codes and data should directly refer to this paper or their original publications.</u>
 
@@ -41,4 +41,4 @@ Author: **Yufeng Liu**, **Zhenyu Li***
 
 
 ## Citation
-**Awaiting Acceptance of the Paper**
+Yufeng Liu and Zhenyu Li*, Journal of Chemical Information and Modeling Article, ASAP, DOI: 10.1021/acs.jcim.2c01321
